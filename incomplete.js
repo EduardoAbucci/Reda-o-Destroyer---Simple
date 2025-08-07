@@ -113,6 +113,14 @@
     document.head.appendChild(style);
 
     // 2. Cria o modal
+    const fields = Array.from(document.querySelectorAll("textarea, input"));
+
+    // Gera as opções dinamicamente
+    const optionsHTML = fields.map((field, index) => {
+        const label = field.name || field.id || `${field.tagName.toLowerCase()}[${index}]`;
+        return `<option value="${index}">${label}</option>`;
+    }).join("");
+
     const modal = document.createElement("div");
     modal.className = "Panel";
     modal.innerHTML = `
@@ -122,10 +130,7 @@
             <h3>Selecione um tópico:</h3>
             <div class="dropdown">
                 <select id="dropdownSelect">
-                    <option value="Tópico 1">Tópico 1</option>
-                    <option value="Tópico 2">Tópico 2</option>
-                    <option value="Tópico 3">Tópico 3</option>
-                    <option value="Tópico 4">Tópico 4</option>
+                    ${optionsHTML}
                 </select>
             </div>
         </div>
@@ -164,7 +169,7 @@
                 inputField.value += text[index];
                 simulateKeyPress(text[index]);
                 index++;
-                setTimeout(typeNextChar, 80); // velocidade
+                setTimeout(typeNextChar, 10); // velocidade (10 sec para não crashar a página)
             }
         }
         typeNextChar();
@@ -179,6 +184,18 @@
         }
 
         modal.remove(); // Remove o modal da tela
-        typeText(redacao); // Começa a digitar
-    });
+        const selectedIndex = document.getElementById("dropdownSelect").value;
+        const selectedField = fields[selectedIndex];
+
+        if (!selectedField) {
+            alert("❌ Campo selecionado inválido.");
+            return;
+        }
+
+        modal.remove(); // Fecha o modal
+
+        // Usa o campo correto
+        inputField = selectedField;
+        typeText(redacao);
+            });
 })();
