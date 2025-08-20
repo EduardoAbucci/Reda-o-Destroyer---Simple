@@ -183,10 +183,11 @@
             return;
         }
 
-        modal.remove(); // Remove o modal da tela
+
+        console.log(`[+] Log: area selecionada ${inputField}`)
         const selectedIndex = document.getElementById("dropdownSelect").value;
         const selectedField = fields[selectedIndex];
-
+        modal.remove()
         if (!selectedField) {
             alert("❌ Campo selecionado inválido.");
             return;
