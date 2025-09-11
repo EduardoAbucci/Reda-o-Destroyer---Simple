@@ -91,7 +91,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 **Eduardo Abucci**
 
 - GitHub: [@EduardoAbucci](https://github.com/EduardoAbucci)
-- LinkedIn: [Eduardo Abucci](https://linkedin.com/in/eduardo-abucci)
+
 
 ## ⭐ Mostre seu apoio
 
