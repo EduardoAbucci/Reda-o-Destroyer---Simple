@@ -2,7 +2,7 @@
 
 <div align="center">
   
-![Redação Destroyer Logo](https://i.pinimg.com/1200x/7c/4f/9d/7c4f9d96ddf6700890b7d1cdf03db8bb.jpg)
+![Redação Destroyer Logo](https://i.pinimg.com/736x/97/07/63/970763e41f802a141dc545dddbe19ec1.jpg)
 
 [![GitHub Stars](https://img.shields.io/github/stars/EduardoAbucci/Reda-o-Destroyer---Simple?style=social)](https://github.com/EduardoAbucci/Reda-o-Destroyer---Simple/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/EduardoAbucci/Reda-o-Destroyer---Simple?style=social)](https://github.com/EduardoAbucci/Reda-o-Destroyer---Simple/network/members)
