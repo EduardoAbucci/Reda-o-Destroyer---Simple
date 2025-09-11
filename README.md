@@ -1,4 +1,4 @@
-# 📝 Redação Destroyer - Simple
+# 📝 Redação Destroyer - v1.0
 
 <div align="center">
   
